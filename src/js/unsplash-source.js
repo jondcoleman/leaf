@@ -325,32 +325,3 @@ if (!Array.prototype.forEach) {
   root.UnsplashPhoto = UnsplashPhoto;
 
 })(this);
-
-
-
-
-//*****************
-// Functionality
-//*****************
-
-var backgroundImage = document.getElementById('unsplash-img');
-var photo = new UnsplashPhoto();
-
-console.log(photo.username);
-
-
-// changebackground:
-
-backgroundImage.style.backgroundImage = "url('" + 
-  photo.randomize("daily") 
-    .size(1920, 1080)
-    .fetch()
-  + 
-  "')";
-
-
-
-
-
-
-
