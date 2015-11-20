@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "New Splash",
+  "description": "Freshen up that new tab page. Cool! Alright! Images courtesy of the Unsplash API.",
+  "version": "1.0",
+
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
