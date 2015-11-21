@@ -329,15 +329,37 @@ if (!Array.prototype.forEach) {
 
 
 
-//*****************
-// Functionality
-//*****************
+/*
+
+ /$$$$$$$$/$$$$$$$$/$$$$$$$$ /$$$$$$ /$$        /$$$$$$  /$$$$$$ /$$$$$$$ /$$$$$$$$   
+|__  $$__| $$_____| $$_____//$$__  $| $/       /$$__  $$/$$__  $| $$__  $| $$_____/   
+   | $$  | $$     | $$     | $$  \__|_/       | $$  \__| $$  \ $| $$  \ $| $$         
+   | $$  | $$$$$  | $$$$$  |  $$$$$$          | $$     | $$  | $| $$  | $| $$$$$      
+   | $$  | $$__/  | $$__/   \____  $$         | $$     | $$  | $| $$  | $| $$__/      
+   | $$  | $$     | $$      /$$  \ $$         | $$    $| $$  | $| $$  | $| $$         
+   | $$  | $$$$$$$| $$$$$$$|  $$$$$$/         |  $$$$$$|  $$$$$$| $$$$$$$| $$$$$$$$/$$
+   |__/  |________|________/\______/           \______/ \______/|_______/|________|__/
+                                                                                      
+*/
+
+
+// VARS!
 
 var backgroundImage = document.getElementById('unsplash-img');
+var toolBox = document.getElementById('another-day');
+var menu = document.getElementById('menu');
+var displayYear = document.getElementById('date');
+var displayTime = document.getElementById('time');
+
 var photo = new UnsplashPhoto();
 
-console.log(photo.username);
+//Date Vars
 
+var date = new Date();
+var year = date.getFullYear();
+var month = date.getMonth()+1;
+var day = date.getDate();
+var time = date.getHours() + ":" + date.getMinutes();
 
 // changebackground:
 
@@ -347,6 +369,27 @@ backgroundImage.style.backgroundImage = "url('" +
     .fetch()
   + 
   "')";
+
+
+// Add Date + Time
+
+displayYear.innerHTML = year + " / " + month + " / " + day;
+displayTime.innerHTML = time;
+
+
+// TODO: Add Photo Info
+  // need photographer JSON info
+
+// Bottom right pop over
+
+menu.addEventListener('click', function() {
+  toolBox.classList.toggle('visible');
+});
+
+
+
+
+
 
 
 

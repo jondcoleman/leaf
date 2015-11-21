@@ -1,4 +1,44 @@
 #unsplash-img { 
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+}
+
+#another-day {
+  position: fixed;
+  bottom: 0;
+  left: 55px;
+  margin: 2%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px 30px;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+}
+
+a { 
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: orange;
+}
+
+#menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 2%;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.visible { 
+  visibility: hidden;
 }
