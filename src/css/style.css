@@ -32,7 +32,7 @@ a:hover{
   bottom: 0;
   left: 0;
   margin: 2%;
-  color: white;
+  color: #B9BCBD;
   font-size: 18px;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -42,3 +42,5 @@ a:hover{
 .visible { 
   visibility: hidden;
 }
+
+
