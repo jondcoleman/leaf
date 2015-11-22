@@ -1,6 +1,6 @@
 # Leaf
 
-![]https://raw.githubusercontent.com/teesloane/leaf/master/src/img/3%3A2%20Portfolio%20Thumbnail.png
+![](https://raw.githubusercontent.com/teesloane/leaf/master/src/img/3%3A2%20Portfolio%20Thumbnail.png)
 
 Leaf is a simple chrome extension that changes your new tab page to display a 'photo-of-the-day' from the awesome [unsplash library](https://unsplash.com/). Unsplash recently opening up a great API, so I thought having some fun with the API would also make for a fun first chrome extension. 
 
