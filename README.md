@@ -8,4 +8,4 @@ Check out the [unsplash javascript wrapper](https://github.com/CrewLabs/unsplash
 
 When I get a chance I'd like to return to this project and dig into the JSON data so that I can properly credit the photographers for the daily photo and add other functionality.
 
-You can check out Leaf in the [chrome webstore](https://chrome.google.com/webstore/detail/leaf/kjhooagpmjcecfjnnejglkmfcodaaimg)
+You can check out Leaf in the [chrome webstore](https://github.com/teesloane/leaf/blob/master/src/img/screenshot.png?raw=true)
