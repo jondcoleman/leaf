@@ -343,48 +343,52 @@ if (!Array.prototype.forEach) {
 */
 
 
-// VARS!
+(function(){
 
-var backgroundImage = document.getElementById('unsplash-img');
-var toolBox = document.getElementById('another-day');
-var menu = document.getElementById('menu');
-var displayYear = document.getElementById('date');
-var displayTime = document.getElementById('time');
+  // VARS
+  var backgroundImage = document.getElementById('unsplash-img');
+  var toolBox = document.getElementById('another-day');
+  var menu = document.getElementById('menu');
+  var displayYear = document.getElementById('date');
+  var displayTime = document.getElementById('time');
 
-var photo = new UnsplashPhoto();
+  var photo = new UnsplashPhoto();
 
-//Date Vars
+  //Date Vars
 
-var date = new Date();
-var year = date.getFullYear();
-var month = date.getMonth()+1;
-var day = date.getDate();
-var time = date.getHours() + ":" + date.getMinutes();
+  var date = new Date();
+  var year = date.getFullYear();
+  var month = date.getMonth()+1;
+  var day = date.getDate();
+  var time = date.getHours() + ":" + date.getMinutes();
 
-// changebackground:
+  // changebackground:
 
-backgroundImage.style.backgroundImage = "url('" + 
-  photo.randomize("daily") 
-    .size(1920, 1080)
-    .fetch()
-  + 
-  "')";
-
-
-// Add Date + Time
-
-displayYear.innerHTML = year + " / " + month + " / " + day;
-displayTime.innerHTML = time;
+  backgroundImage.style.backgroundImage = "url('" + 
+    photo.randomize("daily") 
+      .size(1920, 1080)
+      .fetch()
+    + 
+    "')";
 
 
-// TODO: Add Photo Info
-  // need photographer JSON info
+  // Add Date + Time
 
-// Bottom right pop over
+  displayYear.innerHTML = year + " / " + month + " / " + day;
+  displayTime.innerHTML = time;
 
-menu.addEventListener('click', function() {
-  toolBox.classList.toggle('visible');
-});
+
+  // TODO: Add Photo Info need photographer JSON info
+
+  // Bottom right pop over
+
+  menu.addEventListener('click', function() {
+    toolBox.classList.toggle('visible');
+  });
+  
+})();
+
+
 
 
 
