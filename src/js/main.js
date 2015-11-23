@@ -377,7 +377,6 @@ if (!Array.prototype.forEach) {
       .fetch()
     + 
     "')";
-console.log(backgroundImage.style.backgroundImage);
 
   // Add Date + Time
 
