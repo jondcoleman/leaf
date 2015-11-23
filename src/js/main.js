@@ -311,7 +311,14 @@ if (!Array.prototype.forEach) {
       this._appendRandomization(false);
       this._appendKeywords();
       return this.url;
-
+      
+    } else if (this.randomizationInterval == 'perRequest') {
+      this._appendScope();
+      this._appendDimensions();
+      this._appendRandomization(false);
+      this._appendKeywords();
+      return this.url;
+      
     } else {
       this._appendScope();
       this._appendDimensions();
@@ -365,12 +372,12 @@ if (!Array.prototype.forEach) {
   // changebackground:
 
   backgroundImage.style.backgroundImage = "url('" + 
-    photo.randomize("daily") 
+    photo.randomize("perRequest") 
       .size(1920, 1080)
       .fetch()
     + 
     "')";
-
+console.log(backgroundImage.style.backgroundImage);
 
   // Add Date + Time
 
